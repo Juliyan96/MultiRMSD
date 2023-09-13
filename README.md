@@ -16,7 +16,7 @@ Python 3.7 or higher (Google Colab is highly recommended)
  !git clone https://github.com/Juliyan96/MultiRMSD.git
 
  ```
-2. Install the necesarry dependencies to your Google Colab worksheet, Py3DMol and Biopython and RDKit.
+2. Install the necesarry dependencies to your Google Colab worksheet, Py3DMol, Biopython and RDKit.
 
  ```bash
 !pip install biopython
