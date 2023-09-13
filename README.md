@@ -42,7 +42,7 @@ If you only opt to align your PDB or SDF structures without calculating RMSD you
 ```
 ## Results
 
-This will produce a .log file named RMSD_Out.log which would contain the calculated RMSD for each mobile structure with its reference structure. Additionally, the aligned PDB structures will be created in a new folder named "Aligned_structures" in your working directory. You can view these aligned PDB structures by using PyMol or Py3DMol. If you have opted to just align the PDB or SDF structures the aligned structures will be stored in the Aligned_structures directory without the RMSD calculations. The required workflow to view on Py3Dmol is shown below
+This will produce a .log file named RMSD_Out.log which would contain the calculated RMSD for each mobile structure with its reference structure. Additionally, the aligned PDB structures will be created in a new folder named "Aligned_structures" in your working directory. You can view these aligned PDB structures by using PyMol or Py3DMol. If you have opted to just align the PDB or SDF structures the aligned structures will be stored in the Aligned_structures directory without the RMSD calculations. You can download the folder and view it on your desired viewer. You can also use Py3Dmol to view the aligned structures on Google colab with the code provided below.
 
 ##### Note: These file generations would take roughly around 20 seconds once the Google Colab cell had been run and completed. All output files will be saved in your working directory that holds the PDB files.
 
@@ -55,7 +55,7 @@ import py3Dmol
 def visualize_aligned_structures(aligned_folder):
     viewer = py3Dmol.view(width=800, height=400)
     
-    # List all PDB files in the Aligned_structures folder
+    
     aligned_files = [f for f in os.listdir(aligned_folder) if f.endswith(".pdb")]
 
     for pdb_file in aligned_files:
